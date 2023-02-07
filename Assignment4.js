@@ -11,8 +11,7 @@ function mindGame(gameNum){
 
 }
 
-const gameNum = mindGame(33)
-console.log(gameNum)
+
 
 
 
@@ -28,24 +27,29 @@ function evenOdd(input) {
     }
   }
 
-  const input = evenOdd('chatgpt')
-  console.log(input)
+//problem 3
+
+function isLGSeven(num) {
+  let difference = num - 7;
+  if (difference < 7) {
+    return difference;
+  } else {
+    return num * 2;
+  }
+}
 
 
+//problem 4
 
-
-// problem 3
-// not solved yet
-
-
-
-
-
-// problem 4
-// Not Solved yet
-
-
-
+function findingBadData(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] < 0) {
+        count = count+1;
+      }
+    }
+    return count;
+  }
 
 
 // problem 5
@@ -61,5 +65,3 @@ function gemsToDiamond(gems1, gems2, gems3) {
 }
 
 
-const gemsConverter = gemsToDiamond(1, 1, 1)
-console.log(gemsConverter)
